@@ -1,13 +1,13 @@
 :root {
-    --primary: #6366f1;
-    --primary-hover: #4f46e5;
+    --primary: #10b981;
+    --primary-hover: #059669;
     --bg-dark: #0f172a;
     --bg-darker: #020617;
     --text-main: #f8fafc;
     --text-muted: #94a3b8;
     --glass: rgba(255, 255, 255, 0.03);
     --glass-border: rgba(255, 255, 255, 0.1);
-    --gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+    --gradient: linear-gradient(135deg, #10b981 0%, #059669 100%);
 }
 
 * {
@@ -47,7 +47,7 @@ body {
 }
 
 .blob-1 { top: -100px; right: -100px; }
-.blob-2 { bottom: -100px; left: -100px; background: #a855f7; }
+.blob-2 { bottom: -100px; left: -100px; background: #059669; }
 
 @keyframes move {
     from { transform: translate(0, 0); }
@@ -151,12 +151,12 @@ h1 {
     background: var(--gradient);
     color: white;
     border: none;
-    box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4);
+    box-shadow: 0 10px 20px -5px rgba(16, 185, 129, 0.4);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 15px 30px -5px rgba(99, 102, 241, 0.5);
+    box-shadow: 0 15px 30px -5px rgba(16, 185, 129, 0.5);
 }
 
 .btn-secondary {
