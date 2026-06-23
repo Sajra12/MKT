@@ -347,6 +347,8 @@ kbd {
 
 canvas {
   display: block;
+  width: 100%;
+  height: 100%;
   background-color: transparent;
 }
 
@@ -513,11 +515,6 @@ canvas {
     width: 328px;
     height: 328px;
     border-width: 3px;
-  }
-  
-  canvas {
-    width: 320px;
-    height: 320px;
   }
   
   .mobile-controls {

@@ -151,22 +151,11 @@ function playSound(type) {
   }
 }
 
-// --- Responsive Canvas Resizing ---
-function resizeCanvas() {
-  const containerWidth = canvas.parentElement.clientWidth;
-  // Ensure square canvas on small screens
-  if (containerWidth < 400) {
-    canvas.width = containerWidth;
-    canvas.height = containerWidth;
-  } else {
-    canvas.width = 400;
-    canvas.height = 400;
-  }
-  gridCellSize = canvas.width / gridCount;
-  draw();
-}
-window.addEventListener('resize', resizeCanvas);
-resizeCanvas();
+// --- Logical Canvas Setup ---
+canvas.width = 400;
+canvas.height = 400;
+gridCellSize = canvas.width / gridCount;
+draw();
 
 // --- Game Logic functions ---
 
