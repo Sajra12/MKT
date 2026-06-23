@@ -160,6 +160,7 @@ draw();
 // --- Game Logic functions ---
 
 function initGame() {
+  console.log("initGame: Initializing snake and scores");
   snake = [
     { x: 10, y: 10 },
     { x: 9, y: 10 },
@@ -172,6 +173,7 @@ function initGame() {
   score = 0;
   updateScoreboard();
   placeFood();
+  console.log("initGame complete. Snake head:", snake[0], "Food:", food);
 }
 
 function placeFood() {
@@ -192,6 +194,7 @@ function placeFood() {
 }
 
 function changeGameState(newState) {
+  console.log("changeGameState: Transitioning to", newState);
   gameState = newState;
   
   // Hide all overlays first
@@ -381,9 +384,11 @@ function tick() {
   
   // Calculate new head
   const head = { x: snake[0].x + dx, y: snake[0].y + dy };
+  console.log("tick: snake[0]=", snake[0], "dx/dy=", dx, dy, "head=", head);
   
   // Wall collision check
   if (head.x < 0 || head.x >= gridCount || head.y < 0 || head.y >= gridCount) {
+    console.log("tick: GAME OVER due to wall collision. head=", head, "gridCount=", gridCount);
     changeGameState(STATES.GAMEOVER);
     return;
   }
@@ -391,6 +396,7 @@ function tick() {
   // Self collision check
   for (let segment of snake) {
     if (head.x === segment.x && head.y === segment.y) {
+      console.log("tick: GAME OVER due to self collision. head=", head, "segment=", segment);
       changeGameState(STATES.GAMEOVER);
       return;
     }
