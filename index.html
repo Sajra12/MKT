@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Educándome Online - Estamos preparando algo increíble para ti. Próximamente.">
+  <title>Educándome Online | Próximamente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background-glow"></div>
+  
+  <main class="container">
+    <div class="card" id="coming-soon-card">
+      <div class="badge">Próximamente</div>
+      <h1 class="title">Educándome Online</h1>
+      <p class="subtitle">Estamos diseñando una nueva experiencia de aprendizaje digital. Prepárate para transformar tu futuro.</p>
+      
+      <form class="subscribe-form" id="subscribe-form" onsubmit="event.preventDefault(); alert('¡Gracias por tu interés! Te avisaremos pronto.');">
+        <input type="email" placeholder="Tu correo electrónico" required aria-label="Correo electrónico" id="email-input">
+        <button type="submit" id="submit-button">Notificarme</button>
+      </form>
+      
+      <div class="social-links">
+        <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+        <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+        <a href="#" aria-label="Contacto" class="social-link">Contacto</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Educándome Online. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
