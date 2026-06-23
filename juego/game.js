@@ -433,6 +433,10 @@ function gameLoop(timestamp) {
   if (!lastTime) lastTime = timestamp;
   const elapsed = timestamp - lastTime;
   
+  if (gameState === STATES.PLAYING) {
+    console.log("gameLoop check: timestamp=", timestamp, "lastTime=", lastTime, "elapsed=", elapsed, "gameSpeed=", gameSpeed);
+  }
+  
   if (elapsed >= gameSpeed) {
     tick();
     draw();
