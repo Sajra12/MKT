@@ -11,14 +11,25 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- 1. HERO -->
+  <div class="sticky-top-bar">
+    ⚠️ ¡Aprovecha esta oferta antes de que se acabe! Tiempo restante: <span id="countdown-timer">15:00</span>
+  </div>  <!-- 1. HERO -->
   <section class="hero-section bg-dark-gradient">
     <div class="container hero-content">
       <div class="hero-text">
-        <h1>Optimiza tu alimentación diaria <br><span class="text-accent">con un plan estructurado paso a paso</span></h1>
+        <h1>El método exacto para lograr revertir tu hígado graso <br><span class="text-accent">en 21 días trabajando 20 minutos al día</span></h1>
         <p class="hero-subtitle-lead">Descubre la "Guía para mejorar tu hígado graso en 30 días": Un recurso digital diseñado para ayudarte a organizar menús equilibrados, promover el bienestar digestivo y adoptar hábitos conscientes sin complicaciones extremas.</p>
         <a href="#checkout" class="btn-cta">Sí, quiero comenzar</a>
+        <div class="trust-indicators">
+          <div class="trust-stars">
+            <span class="stars-icon">★★★★★</span>
+            <span>4.9/5 estrellas basado en más de 300 opiniones</span>
+          </div>
+          <div class="trust-guarantee">
+            <svg class="seal-icon" viewBox="0 0 24 24"><path fill="#F59E0B" d="M12,2L14.4,4.4L17.6,3.6L18.4,6.8L21.6,7.6L20.4,10.8L22.4,13.6L19.6,15.6L20.4,18.8L17.2,19.2L15.2,22L12,20.4L8.8,22L6.8,19.2L3.6,18.8L4.4,15.6L1.6,13.6L3.6,10.8L2.4,7.6L5.6,6.8L6.4,3.6L9.6,4.4L12,2ZM12,6A6,6 0 1,0 12,18A6,6 0 1,0 12,6ZM10.5,14L7.5,11L8.9,9.6L10.5,11.2L15.1,6.6L16.5,8L10.5,14Z"/></svg>
+            Garantía de Devolución de 7 Días - Sin Preguntas
+          </div>
+        </div>
       </div>
       <div class="hero-image">
         <img src="assets/main_product_cover_colorful.png" alt="Guía para mejorar tu hígado graso en 30 días">
@@ -30,7 +41,7 @@
   <section class="subhero-section bg-beige">
     <div class="container text-center">
       <div class="subhero-card reveal">
-        <h3>Un método práctico de 30 días adaptado a tu vida diaria</h3>
+        <h3>Un método práctico de 21 días adaptado a tu vida diaria</h3>
         <p>No necesitas gastar una fortuna en alimentos raros ni pasar horas cocinando. Esta guía condensa años de experiencia en un paso a paso directo, explicándote cómo organizar tus menús para promover el bienestar de forma 100% natural.</p>
         <div class="subhero-bullets">
           <div class="subhero-bullet-item">
@@ -267,6 +278,15 @@
             <li>Acceso de por vida a los archivos</li>
           </ul>
           <a href="#" class="btn-cta">Comprar Ahora</a>
+          <div class="trust-indicators">
+            <div class="trust-stars">
+              <span class="stars-icon">★★★★★</span>
+              <span>4.9/5 estrellas basado en más de 300 opiniones</span>
+            </div>
+            <div class="trust-guarantee">
+              <span>🛡️</span> Garantía de devolución de 7 días sin preguntas
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -289,7 +309,19 @@
   <section class="bg-dark-gradient" style="padding: 60px 0; text-align: center;">
     <div class="container">
       <h2 style="color: #F4DFB8; margin-bottom: 30px;">TU BIENESTAR NO PUEDE ESPERAR. COMIENZA HOY.</h2>
-      <a href="#checkout" class="btn-cta">Quiero comenzar hoy</a>
+      <div class="footer-cta-container">
+        <a href="#checkout" class="btn-cta">Quiero comenzar hoy</a>
+        <div class="trust-indicators">
+          <div class="trust-stars">
+            <span class="stars-icon">★★★★★</span>
+            <span>4.9/5 estrellas basado en más de 300 opiniones</span>
+          </div>
+          <div class="trust-guarantee">
+            <svg class="seal-icon" viewBox="0 0 24 24"><path fill="#F59E0B" d="M12,2L14.4,4.4L17.6,3.6L18.4,6.8L21.6,7.6L20.4,10.8L22.4,13.6L19.6,15.6L20.4,18.8L17.2,19.2L15.2,22L12,20.4L8.8,22L6.8,19.2L3.6,18.8L4.4,15.6L1.6,13.6L3.6,10.8L2.4,7.6L5.6,6.8L6.4,3.6L9.6,4.4L12,2ZM12,6A6,6 0 1,0 12,18A6,6 0 1,0 12,6ZM10.5,14L7.5,11L8.9,9.6L10.5,11.2L15.1,6.6L16.5,8L10.5,14Z"/></svg>
+            Garantía de Devolución de 7 Días - Sin Preguntas
+          </div>
+        </div>
+      </div>
       <p style="margin-top: 30px; font-size: 0.9rem; color: #aaa;">&copy; 2026 Lic. Valentina Gómez. Todos los derechos reservados.</p>
       
       <div style="margin-top: 40px; font-size: 0.75rem; color: #888; line-height: 1.6; max-width: 800px; margin-left: auto; margin-right: auto; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">
@@ -318,6 +350,70 @@
       revealElements.forEach(element => {
         observer.observe(element);
       });
+    });
+  </script>
+  <div class="floating-notification" id="floating-notification">
+    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Usuario" id="notif-img">
+    <div class="notif-content">
+      <span class="notif-name" id="notif-name">María G.</span> de <span id="notif-location">Madrid</span> acaba de comprar <br>
+      <strong>Guía para mejorar tu hígado graso</strong>
+      <div class="notif-time">Hace <span id="notif-time">2</span> minutos</div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // 15 Minute Countdown
+      let time = 15 * 60;
+      const timerElement = document.getElementById('countdown-timer');
+      if (timerElement) {
+        setInterval(() => {
+          if(time <= 0) time = 15 * 60; // reset for demo purposes
+          const minutes = Math.floor(time / 60);
+          const seconds = time % 60;
+          timerElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+          time--;
+        }, 1000);
+      }
+
+      // Social Proof Notifications
+      const notifications = [
+        { name: 'María L.', loc: 'Ciudad de México', time: '2', img: 'women/12.jpg' },
+        { name: 'Carlos R.', loc: 'Bogotá', time: '5', img: 'men/34.jpg' },
+        { name: 'Ana P.', loc: 'Madrid', time: '12', img: 'women/44.jpg' },
+        { name: 'Jorge M.', loc: 'Buenos Aires', time: '1', img: 'men/15.jpg' },
+        { name: 'Lucía S.', loc: 'Lima', time: '4', img: 'women/22.jpg' }
+      ];
+      
+      const notifEl = document.getElementById('floating-notification');
+      const nameEl = document.getElementById('notif-name');
+      const locEl = document.getElementById('notif-location');
+      const timeEl = document.getElementById('notif-time');
+      const imgEl = document.getElementById('notif-img');
+      
+      let currentNotif = 0;
+      
+      if (notifEl) {
+        function showNotification() {
+          const notif = notifications[currentNotif];
+          nameEl.textContent = notif.name;
+          locEl.textContent = notif.loc;
+          timeEl.textContent = notif.time;
+          imgEl.src = `https://randomuser.me/api/portraits/${notif.img}`;
+          
+          notifEl.classList.add('show');
+          
+          setTimeout(() => {
+            notifEl.classList.remove('show');
+            currentNotif = (currentNotif + 1) % notifications.length;
+          }, 4000);
+        }
+
+        setTimeout(() => {
+          showNotification();
+          setInterval(showNotification, 10000);
+        }, 3000);
+      }
     });
   </script>
 </body>
